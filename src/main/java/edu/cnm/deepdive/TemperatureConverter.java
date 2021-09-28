@@ -4,12 +4,10 @@ import java.util.Scanner;
 
 public class TemperatureConverter {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    // Scanner scanner = new Scanner(System.in);
 
-    while(true) {
-      System.out.println("Enter a value in degrees celsius:");
-      double c = scanner.nextDouble();
-      System.out.println(convertC2F(c));
+    for (String arg : args) {
+      System.out.println(arg + " degrees celsius is " + convertC2F(Double.parseDouble(arg)) + " degrees fahrenheit");
     }
   }
 
